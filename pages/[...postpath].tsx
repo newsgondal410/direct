@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 			redirect: {
 				permanent: false,
 				destination: `${
-					`https://furyprosecutionkitchen.com/q5wxnm3j5?key=5304b7d9a8590df64bac089ddd513eef/`
+					`https://furyprosecutionkitchen.com/` + encodeURI(path as string)
 				}`,
 			},
 		};
